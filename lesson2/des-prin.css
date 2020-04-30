@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Righteous&display=swap');
+
+header {
+    color: white;
+    background-color: #3A405A;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+main {
+    grid-template-columns: 1fr;
+}
+
+h1 {
+    font-family: "PT Serif", serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h2 {
+    font-family: "PT Serif", serif;
+    text-align: center;
+    margin-top: -15px;
+}
+
+h3 {
+    font-family: "PT Serif", serif;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border: solid 10px;
+    border-radius: 7px;
+    border-color: #747A87;
+}
+
+h4 {
+    font-family: "PT Serif", serif;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: "PT Serif", serif;
+    color: white;
+    text-align: center;
+    margin: 15px;
+    padding: 10px 30px 30px 30px;
+}
+
+a {
+    color: white;
+    font-family: "PT Serif", serif;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+section {
+    background-color: #747A87;
+    margin: 30px auto;
+    border-radius: 7px;
+    max-width: 450px;
+    box-shadow: 6px 10px 3px #888888;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+}
+
+section h3 {
+    background-color: white;
+}
+
+footer {
+    background-color: #3A405A;
+    padding: 7px;
+    text-align: center;
+}
+
+footer a {
+    display: inline;
+}
+
+footer p {
+    padding: 0;
+}
+
+@media screen and (min-width: 600px) {
+
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+
+}

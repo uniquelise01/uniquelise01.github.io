@@ -37,7 +37,7 @@ footer a {
     color: white;
 }
 
-@media only screen and (min-width: 32.5em) {
+@media screen and (min-width: 32.5em) {
     img {
         float: right;
         width: 25%;
