@@ -1,1 +1,352 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&family=Roboto&display=swap');
+
+/*heading css for all pages*/
+h1, h2, h3 {
+    font-family: "Baloo 2", cursive;
+}
+
+h4, h5, h6, p, a, ul {
+    font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+    background-color: #282f47;
+    color: white;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+}
+
+.site-plan-menu ul {
+    background-color: #9a5c38;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.site-plan-menu li {
+    margin: 0 auto;
+}
+
+.site-plan-menu a {
+    text-decoration: none;   
+    display: block;
+    padding: 10px;
+}
+
+.site-plan-menu a:hover {
+    background-color: #e0995e;
+    color: black;
+}
+
+body {
+    background-color: white;
+}
+
+main {
+    background-color: white;
+    display: block;
+}
+
+a {
+    color: white;
+}
+
+/*home page css*/
+.home-h2 {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.site-name {
+    text-align: center;
+    background-color: #B7B5B3;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 5px grey;
+}
+
+.domain-name {
+    text-align: center;
+    background-color: #B7B5B3;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 5px grey;
+}
+
+.site-purpose {
+    text-align: center;
+    background-color: #B7B5B3;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 5px grey;
+}
+
+.site-purpose h3 {
+    margin-top: 0;
+}
+
+.logo-intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    background-color: #B7B5B3;
+    padding: 20px;
+    margin: 30px auto;
+    border-radius: 7px;
+    box-shadow: 7px 7px 5px grey;
+    max-width: 383px;
+}
+
+.logo-intro h3 {
+    grid-column: 1/2;
+    text-align: center;
+    padding: 45px 0;
+}
+
+.logo-intro img {
+    grid-column: 2/3;
+    margin: auto auto;
+    width: 50%;
+    max-width: 150px;
+}
+
+/*all subpage titles*/
+.title {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/*target audience css*/
+.target-audience div {
+    text-align: center;
+    background-color: #B7B5B3;
+    padding: 10px 20px 30px 20px;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 5px grey;
+}
+
+#targ-aud-p {
+    padding: 20px;
+}
+
+#persona1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#persona1 h3 {
+    grid-column: 1/3;
+}
+
+#persona1 img {
+    width: 75%;
+    max-width: 180px;
+    margin: auto;
+    border-radius: 7px;
+    grid-row: 2/4;
+}
+
+#persona1 h5 {
+    text-align: left;
+    margin: 20px 0 20px 0;
+}
+
+#persona1 p {
+    grid-column: 2/3;
+    text-align: left;
+    margin-top: 0;
+}
+
+#persona2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#persona2 h3 {
+    grid-column: 1/3;
+}
+
+#persona2 img {
+    width: 75%;
+    max-width: 180px;
+    margin: auto;
+    border-radius: 7px;
+    grid-row: 2/4;
+}
+
+#persona2 h5 {
+    text-align: left;
+    margin: 20px 0 20px 0;
+}
+
+#persona2 p {
+    grid-column: 2/3;
+    text-align: left;
+    margin-top: 0;
+}
+
+#scenarios ul {
+    text-align: left;
+}
+
+/*color scheme css*/
+.color-scheme div {
+    text-align: center;
+    padding: 10px;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 5px grey;
+}
+
+.blue {
+    background-color: #4F5D73;
+    color: white;
+}
+
+.dark-blue {
+    background-color: #282F47;
+    color: white;
+}
+
+.white {
+    border: 1px solid #B7B5B3;
+}
+
+.orange {
+    background-color: #E0995E;
+}
+
+.dark-orange {
+    background-color: #9a5c38;
+    color: white;
+}
+
+.light-gray {
+    background-color: #B7B5B3;
+}
+
+/*typography css*/
+.typography div{
+    text-align: center;
+    background-color: #B7B5B3;
+    padding: 10px 20px;
+    margin: 30px;
+    border-radius: 7px;
+    box-shadow: 7px 7px 5px grey;
+}
+
+.heading-type h2 {
+    margin-top: 0;
+}
+
+/*footer css for all pages*/
+footer {
+    background-color: #282f47;
+    color: white;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+/*desktop size*/
+@media screen and (min-width: 600px) {
+
+    /*max screen size*/
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /*home page css*/
+    .site-plan-menu {
+        background-color: #9a5c38;
+    }
+
+    .site-plan-menu ul {  
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .site-plan-menu a {
+        padding: 20px;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .site-name {
+        margin-top: 0;
+    }
+
+    .domain-name {
+        margin-top: 0;
+    }
+
+    .site-purpose {
+        margin-top: 0;
+    }
+
+    /*target audience css*/
+    .target-audience {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin: 0 30px 30px 30px;
+    }
+
+    #targ-aud-p {
+        grid-column: 1/3;
+        margin: 0;
+    }
+
+    #persona1, #persona2 {
+        display: block;
+        text-align: center;
+        margin: 0;
+    }
+
+    #persona1 h5, #persona2 h5 {
+        text-align: center;
+    }
+
+    #scenarios {
+        grid-column: 1/3;
+        margin: 0;
+    }
+
+    /*color scheme css*/
+    .color-scheme {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 30px;
+        margin: 0 30px 30px 30px;
+    }
+
+    .color-scheme div {
+        margin: 0;
+    }
+
+    /*typography css*/
+    .typography {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin: 0 30px 30px 30px;
+    }
+
+    .typography div {
+        margin: 0;
+    }
+}
