@@ -111,6 +111,10 @@ h2 {
     width: 100%;
 }
 
+.gallery-grid figure {
+    margin: 0;
+}
+
 figcaption {
     padding: 10px;
 }
