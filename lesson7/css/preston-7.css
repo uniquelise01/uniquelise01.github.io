@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Roboto&display=swap');
+
+
+/*General*/
+h1, h2, h3 {
+    font-family: 'Baloo 2', cursive;
+}
+
+h4, h5, p, li, a, figcaption {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Pancake block*/
+.pancake-block {
+    display: none;
+    background-color: #e0995e;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.pancake-block p {
+    margin: 5px;
+    font-size: 0.7em;
+}
+
+/*Header and nav*/
+header {
+    background-color: #282f47;
+    color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-box {
+    height: 40px;
+    margin: 7px;
+    margin-right: 10px;
+}
+
+.web-title {
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.motto {
+    margin-top: 0;
+    font-size: 0.65em;
+    padding-left: 5px;
+}
+
+nav {
+    background-color: #9a5c38;
+    color: white;
+    margin: 0 auto;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+    margin: 0 auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #e0995e;
+    color: black;
+}
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    background-color: #e0995e;
+}
+
+
+/*Preston Page*/
+main {
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.hero-img {
+    position: relative;
+    width: 100%;
+}
+
+.weather-summary {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    padding: 10px;
+    background: rgb(79, 93, 115, 0.8);
+    color: white;
+    display: grid;
+    grid-template-columns: 6em 4em;
+    grid-gap: 10px;
+    text-align: right;
+    font-size: 0.7em;
+}
+
+.weather-summary h3 {
+    grid-column: 1/3;
+    margin: 5px auto 0 auto;
+    font-size: 1.3em;
+}
+
+.weather-summary p {
+    margin: 0;
+}
+
+.rc {
+    text-align: left;
+    color: #F0C487;
+}
+
+.five-day-forecast {
+    display: none;
+}
+
+.article {
+    text-align: left;
+    background-color: #b7b5b3;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.article h2 {
+    margin: 10px 0 0 0;
+}
+
+.article h5 {
+    margin: 5px 0 0 20px;
+}
+
+.article p {
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.article a {
+    color: #9a5c38;
+    text-decoration: none;
+}
+
+.article-img {
+    max-height: 200px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.article-img img {
+    width: 100%;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.preston-map {
+    margin: 20px;
+}
+
+.preston-map iframe {
+     width: 100%;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #282f47;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    max-height: 50px;
+    font-size: .9em;
+}
+
+footer p {
+    margin: 2px;
+    margin-bottom: 5px;
+}
+
+
+/*Media queries*/
+@media screen and (min-width: 550px){
+
+    /*Pancake block*/
+    .pancake-block p {
+        font-size: 1em;
+    }
+    
+    
+    /*Header and Nav*/
+    header {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .logo-box {
+        height: 60px;
+        margin: 10px;
+        margin-right: 10px;
+    }
+    
+    .web-title {
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+    
+    .motto {
+        margin-top: 0;
+        font-size: 0.9em;
+        padding-left: 5px;
+    }
+
+
+    /*Preston Page*/
+    .hero {
+        height: 300px;
+    }
+
+    .weather-summary {
+        display: grid;
+        grid-template-columns: 100px 60px;
+        font-size: 1em;
+    }
+    
+    .weather-summary h3 {
+        font-size: 1.2em;
+    }
+    
+    .weather-summary p {
+        font-size: 0.9em;
+    }
+
+    .five-day-forecast {
+        display: block;
+        padding: 10px;
+        margin: 20px 0;
+    }
+
+    .five-day-forecast h3 {
+        margin: 10px auto;
+    }
+
+    .five-days {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        max-width: 580px;
+    }
+
+    .five-days p {
+        margin: 0;
+        padding-top: 5px;
+    }
+
+    .five-days div {
+        grid-row: 2/3;
+        background-color: #4f5d73;
+        padding: 10px;
+        border-top: 3px solid #282f47;
+        margin: 10px;
+        color: #b7b5b3;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        grid-gap: 15px;
+        margin: 0 auto;
+        max-width: 580px;
+    }
+    
+    .article p {
+        text-align: justify;
+    }
+
+    .article-text {
+        grid-row: 1/2;
+    }
+
+    .article-img {
+        margin: auto;
+        grid-column: 2/3;
+        max-height: 500px;
+    }
+
+    .contact-info {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        margin-top: 0;
+    }
+
+    .contact-text {
+        margin: auto 20px auto 0;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        text-align: left;
+    }
+    
+    .preston-map iframe {
+        width: 100%;
+        max-height: 300px;
+        grid-row: 1/2;
+    }
+
+    /*Footer*/
+    footer {
+        padding: 15px;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+
+    /*Header and Nav*/
+    header {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .logo-box {
+        height: 90px;
+        margin: 15px;
+    }
+    
+    .web-title {
+        margin-bottom: 0;
+        font-size: 2.2em;
+    }
+    
+    .motto {
+        margin-top: 0;
+        font-size: 1em;
+        padding-left: 5px;
+    }
+    
+    .navigation li:first-child{
+        display: none;
+    }
+
+    .navigation li {
+        display: flex;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+
+    /*Preston page*/
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .five-day-forecast {
+        margin-top: 30px;
+    }
+
+    .five-day-forecast h3 {
+        font-size: 1.5em;
+    }
+
+    .article {
+        padding: 30px;
+        margin-top: 30px;
+    }
+
+    .article-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
+        margin: 0 auto;
+        max-width: none;
+    }
+    
+    .article p {
+        font-size: 1.1em;
+    }
+
+    .article-img {
+        margin: auto;
+        height: auto;
+    }
+    
+    .article-img img {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .contact-info {
+        margin-top: 20px;
+    }
+
+    .contact-text {
+        margin: auto 20px auto 10px;
+    }
+    
+    .preston-map iframe {
+        width: 100%;
+        max-height: 300px;
+        grid-row: 1/2;
+    }
+
+
+    /*Footer*/
+    footer {
+        max-width: 800px;
+        margin: 20px auto 0 auto;
+        padding: 15px;
+        font-size: 100%;
+    }
+
+    
+}
