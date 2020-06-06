@@ -40,7 +40,7 @@
         <h2>Preston Idaho</h2>
         <div class="sections">
             <div class="hero">
-                <picture>
+                <picture class="hero-pic">
                     <source srcset="images/MD-labeled-town-under-calm-sky-1463968.jpg" media="(min-width: 550px) and (max-width: 699px)">
 
                     <source srcset="images/LG-labeled-town-under-calm-sky-1463968.jpg" media="(min-width: 700px)">
@@ -65,27 +65,27 @@
             <div class="five-day-forecast">
                 <h3>5 Day Forecast</h3>
                 <div class="five-days">
-                    <p>Tue</p>
+                    <p><span id="day1">Tue</span></p>
                     <div>
                         <img src="./images/iconfinder_Sunny_3741356.svg" alt="sunny icon">
                         <p>60 &deg;F</p>
                     </div>
-                    <p>Wed</p>
+                    <p><span id="day2">Wed</span></p>
                     <div>
                         <img src="./images/iconfinder_Overcast_3741359.svg" alt="overcast icon">
                         <p>55 &deg;F</p>
                     </div>
-                    <p>Thur</p>
+                    <p><span id="day3">Thur</span></p>
                     <div>
                         <img src="./images/iconfinder_Partly_Cloudy_3741357.svg" alt="partly cloudy icon">
                         <p>59 &deg;F</p>
                     </div>
-                    <p>Fri</p>
+                    <p><span id="day4">Fri</span></p>
                     <div>
                         <img src="./images/iconfinder_Sunny_3741356.svg" alt="sunny icon">
                         <p>61 &deg;F</p>
                     </div>
-                    <p>Sat</p>
+                    <p><span id="day5">Sat</span></p>
                     <div>
                         <img src="./images/iconfinder_Sunny_3741356.svg" alt="sunny icon">
                         <p>62 &deg;F</p>
@@ -95,7 +95,13 @@
             <div class="article">
                 <div class="article-grid">
                     <div class="article-img">
-                        <img src="./images/rsz_adult-african-american-people-black-women-business-1181605.jpg" alt="two women talking">
+                        <picture>
+                            <source srcset="./images/md-people.jpg" media="(min-width: 550px) and (max-width: 699px)">
+
+                            <source srcset="./images/lg-people.jpg" media="(min-width: 700px)">
+
+                            <img src="./images/sm-people.jpg" alt="two women talking">
+                        </picture>
                     </div>
                     <div class="article-text">
                         <h2>Founders Day Fresco</h2>

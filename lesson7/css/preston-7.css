@@ -111,6 +111,11 @@ main {
     width: 100%;
 }
 
+.hero-pic {
+    position: relative;
+    width: 100%;
+}
+
 .weather-summary {
     position: absolute;
     top: 30px;
@@ -301,7 +306,7 @@ footer p {
     }
     
     .article p {
-        text-align: justify;
+        text-align: left;
     }
 
     .article-text {
