@@ -116,7 +116,7 @@ h2 {
 }
 
 figcaption {
-    padding: 10px;
+    display: none;
 }
 
 
@@ -243,6 +243,11 @@ footer p {
 
     .gallery-grid div:hover {
         box-shadow: 0 0 20px grey;
+    }
+
+    figcaption {
+        display: block;
+        padding: 10px;
     }
 
 
