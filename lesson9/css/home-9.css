@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Roboto&display=swap');
+
+
+/*General*/
+h1, h2, h3 {
+    font-family: 'Baloo 2', cursive;
+}
+
+h4, h5, p, li, a, figcaption, button {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Header and nav*/
+header {
+    background-color: #282f47;
+    color: white;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo-box {
+    height: 40px;
+    margin: 7px;
+    margin-right: 10px;
+}
+
+.web-title {
+    margin-bottom: 0;
+    font-size: 1em;
+}
+
+.motto {
+    margin-top: 0;
+    font-size: 0.65em;
+    padding-left: 5px;
+}
+
+nav {
+    background-color: #9a5c38;
+    color: white;
+    margin: 0 auto;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+    margin: 0 auto;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+nav a:hover {
+    background-color: #e0995e;
+    color: black;
+}
+
+.responsive li {
+    display: block;
+}
+
+.active {
+    background-color: #e0995e;
+}
+
+/*Home page*/
+button {
+    padding: 10px;
+    margin: 10px;
+    background-color: #4F5D73;
+    color: white;
+    border: none;
+    border-radius: 7px;
+}
+
+.pres, .fish, .soda {
+    display: none;
+}
+
+button:hover {
+    background-color: #282f47;
+}
+
+.weather-updates {
+    background-color: #B7B5B3;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.weather-updates h4 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.weather-updates button {
+    width: 75%;
+    max-width: 250px;
+    padding: 15px;
+    margin: 7px auto;
+}
+
+button.app.button {
+    margin-bottom: 20px;
+}
+
+.mission {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto 40px auto;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 15px;
+}
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+
+/*Footer*/
+footer {
+    background-color: #282f47;
+    color: white;
+    text-align: center;
+    padding: 7px;
+    max-height: 50px;
+    font-size: .9em;
+}
+
+footer p {
+    margin: 2px;
+    margin-bottom: 5px;
+}
+
+
+/*Media queries*/
+@media screen and (min-width: 550px){
+    
+    /*Header and Nav*/
+    header {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .logo-box {
+        height: 60px;
+        margin: 10px;
+        margin-right: 10px;
+    }
+    
+    .web-title {
+        margin-bottom: 0;
+        font-size: 1.5em;
+    }
+    
+    .motto {
+        margin-top: 0;
+        font-size: 0.9em;
+        padding-left: 5px;
+    }
+
+
+    /*Home page*/
+    .weather-updates {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .weather-updates h4 {
+        grid-column: 1/3;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .weather-updates button {
+        height: 70px;
+        padding: auto;
+        margin-bottom: 30px;
+    }
+
+
+    /*Footer*/
+    footer {
+        padding: 15px;
+    }
+
+}
+
+
+@media screen and (min-width: 700px) {
+
+    /*Header and Nav*/
+    header {
+        display: flex;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .logo-box {
+        height: 90px;
+        margin: 15px;
+    }
+    
+    .web-title {
+        margin-bottom: 0;
+        font-size: 2.2em;
+    }
+    
+    .motto {
+        margin-top: 0;
+        font-size: 1em;
+        padding-left: 5px;
+    }
+    
+    .navigation li:first-child{
+        display: none;
+    }
+
+    .navigation li {
+        display: flex;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+    }
+
+
+    /*Home page*/
+    .pres, .fish, .soda {
+        display: block;
+    }
+
+    .weather-updates {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+    }
+
+    .weather-updates h4 {
+        grid-column: 1/2;
+        margin: auto;
+    }
+
+    .weather-updates button {
+        margin: 30px;
+    }
+
+    /*Footer*/
+    footer {
+        max-width: 800px;
+        margin: 20px auto 0 auto;
+        padding: 15px;
+        font-size: 100%;
+    }
+
+    
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Grotto | Home</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/home-9.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo-box" src="../lesson3/iconfinder_weather_1054936.svg" alt="logo">
+        <div class="header-title">
+            <h1 class="web-title">The Weather Grotto</h1>
+            <h3 class="motto">Relax, we've got you covered.</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; MENU</a></li>
+            <li class="active"><a href="./index.html">HOME</a></li>
+            <li><a href="preston-9.html">PRESTON</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="./stormcenter.html">STORM CENTER</a></li>
+            <li><a href="./gallery-9.html">GALLERY</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="preston-homebox">
+        </div>
+        <button class="pres button" type="button" onclick="location.href='./preston-9.html'">View Preston Weather</button>
+        <div class="fish-haven-homebox">
+        </div>
+        <button class="fish button" type="button" onclick="location.href='#'">View Fish Haven Weather</button>
+        <div class="soda-springs-homebox">
+        </div>
+        <button class="soda button" type="button" onclick="location.href='#'">View Soda Springs Weather</button>
+
+        <div class="weather-updates">
+            <h4>Want weather updates?</h4>
+            <button class="newsletter button">Sign up for our newsletter</button>
+            <button class="app button">Download the app</button>
+        </div>
+        
+        <div class="mission">
+            <h3>Our Mission:</h3>
+            <p>To provide accurate weather information to residents living in, traveling to, or researching the Preston, Fish Haven, or Soda Springs area.</p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com/"><img src="images/facebook-icon.svg"></a>
+            <a href="https://www.instagram.com/"><img src="images/instagram-icon.svg"></a>
+            <a href="https://www.pinterest.com/"><img src="images/pinterest-icon.svg"></a>
+            <a href="https://www.reddit.com/"><img src="images/reddit-icon.svg"></a>
+            <a href="https://twitter.com/explore"><img src="images/twitter-icon.svg"></a>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; The Weather Grotto | Attributions | Elise Hansen</p>
+        <p class="current-date"></p>
+    </footer>
+
+    <script src="./js/home-9.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+        families: ['Baloo 2', 'Roboto']
+        }
+    });
+    </script>
+    
+</body>
+</html>

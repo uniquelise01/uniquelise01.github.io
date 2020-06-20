@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Grotto | Preston Idaho</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/preston-9.css">
+</head>
+<body>
+    
+    <div class="pancake-block">
+            <p><strong>Saturday = Preston Pancakes in the Park!</strong></p>
+            <p><strong>9:00a.m. Saturday at the city park pavilion.</strong></p>
+    </div>
+
+    <header>
+        <img class="logo-box" src="../lesson3/iconfinder_weather_1054936.svg" alt="logo">
+        <div class="header-title">
+            <h1 class="web-title">The Weather Grotto</h1>
+            <h3 class="motto">Relax, we've got you covered.</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; MENU</a></li>
+            <li><a href="./index.html">HOME</a></li>
+            <li class="active"><a href="preston-9.html">PRESTON</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li><a href="./stormcenter.html">STORM CENTER</a></li>
+            <li><a href="./gallery-9.html">GALLERY</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="sections">
+            <div class="hero">
+                <picture class="hero-pic">
+                    <source srcset="images/MD-labeled-town-under-calm-sky-1463968.jpg" media="(min-width: 550px) and (max-width: 699px)">
+
+                    <source srcset="images/LG-labeled-town-under-calm-sky-1463968.jpg" media="(min-width: 700px)">
+
+                    <img class="hero-img" src="./images/SM-labeled-town-under-calm-sky-1463968 copy.jpg" alt="a town that looks like preston idaho">
+                </picture>
+                
+                <div class="weather-summary">
+                    <h3>Weather Summary</h3>
+                    <p>Currently:</p>
+                    <p class="rc">Sunny</p>
+                    <p>High:</p>
+                    <p class="rc"><span id="temp">56</span> &deg;F</p>
+                    <p>Wind Chill:</p>
+                    <p class="rc"><span id="windchill"></span> &deg;F</p>
+                    <p>Humidity:</p>
+                    <p class="rc">69%</p>
+                    <p>Wind Speed:</p>
+                    <p class="rc"><span id="windspeed">5</span> mph</p>
+                </div>
+            </div>
+            <div class="five-day-forecast">
+                <h3>5 Day Forecast</h3>
+                <div class="five-days">
+                    <p><span id="day1">Tue</span></p>
+                    <div>
+                        <img src="./images/iconfinder_Sunny_3741356.svg" alt="sunny icon">
+                        <p>60 &deg;F</p>
+                    </div>
+                    <p><span id="day2">Wed</span></p>
+                    <div>
+                        <img src="./images/iconfinder_Overcast_3741359.svg" alt="overcast icon">
+                        <p>55 &deg;F</p>
+                    </div>
+                    <p><span id="day3">Thur</span></p>
+                    <div>
+                        <img src="./images/iconfinder_Partly_Cloudy_3741357.svg" alt="partly cloudy icon">
+                        <p>59 &deg;F</p>
+                    </div>
+                    <p><span id="day4">Fri</span></p>
+                    <div>
+                        <img src="./images/iconfinder_Sunny_3741356.svg" alt="sunny icon">
+                        <p>61 &deg;F</p>
+                    </div>
+                    <p><span id="day5">Sat</span></p>
+                    <div>
+                        <img src="./images/iconfinder_Sunny_3741356.svg" alt="sunny icon">
+                        <p>62 &deg;F</p>
+                    </div>
+                </div>
+            </div>
+            <div class="article">
+                <div class="article-grid">
+                    <div class="article-img">
+                        <picture>
+                            <source srcset="./images/md-people.jpg" media="(min-width: 550px) and (max-width: 699px)">
+
+                            <source srcset="./images/lg-people.jpg" media="(min-width: 700px)">
+
+                            <img src="./images/sm-people.jpg" alt="two women talking">
+                        </picture>
+                    </div>
+                    <div class="article-text">
+                        <h2>Founders Day Fresco</h2>
+                        <h5>By Jane Eyre</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum… <a href="#">Continue to full article.</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="contact-info">
+                <div class="contact-text">
+                    <h4>The Weather Grotto</h4>
+                    <p class="address">1234 North Main Ave</br>Preston, Idaho 83263</p>
+                    <p class="phone">(999) 999-9999</p>
+                    <p class="email">theweathergrotto@email.com</p>
+                </div>
+                <div class="preston-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.769876894235!2d-111.880325!3d42.099746950000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1590126350042!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; The Weather Grotto | Attributions | Elise Hansen</p>
+        <p class="current-date"></p>
+    </footer>
+
+    <script src="./js/preston-9.js"></script>
+    <script src="./js/windchill.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+        families: ['Baloo 2', 'Roboto']
+        }
+    });
+    </script>
+</body>
+</html>
