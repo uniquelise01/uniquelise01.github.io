@@ -19,7 +19,7 @@ hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive'
 
 
 //JSON extraction
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json'
 
 fetch(requestURL)
     .then(function (response) {
@@ -28,12 +28,20 @@ fetch(requestURL)
     .then(function (jsonObject) {
         console.log(jsonObject)
         
-        const towns = jsonObject['towns'];
+        const source = jsonObject["towns"];
+        let towns = [];
 
-        for(let i = 0; i < towns.length; i++) {
+        j = 0;
+        for (let i = 0; i < source.length; i++ ) {
+        if (source[i].name == "Preston" || source[i].name == "Fish Haven" || source[i].name == "Soda Springs"){
+        towns[j] = source[i]
+        j++;
 
-            if (towns[i].name == 'Preston'){
+        }}
+
+        for (let i = 0; i < towns.length; i++) {
                 let card = document.createElement('section');
+                let div = document.createElement('div');
                 let h2 = document.createElement('h2');
                 let h4 = document.createElement('h4');
                 let para = document.createElement('p');
@@ -41,35 +49,34 @@ fetch(requestURL)
                 let para3 = document.createElement('p');
                 let image = document.createElement('img');
 
-                h2.textContent = towns['Preston'].name;
+                div.classList.add('card-text');
+                h2.textContent = towns[i].name;
 
-                h4.textContent = towns['Preston'].motto;
-
-                para.textContent = "Year Founded: " + towns['Preston'].yearFounded;
-
-                para2.textContent = "Current Population:  " + towns['Preston'].currentPopulation;
-
-                para3.textContent = "Average Rainfall: " + towns['Preston'].averageRainfall;
+                h4.classList.add('home-motto')
+                h4.textContent = towns[i].motto;
                 
-                image.setAttribute('src', towns['Preston'].photo);
-                image.setAttribute('alt', "Preston ID");
+                para.textContent = "Year Founded: " + towns[i].yearFounded;
+                para2.textContent = "Population: " + towns[i].currentPopulation;
+                para3.textContent = "Avg. Annual Rainfall: " + towns[i].averageRainfall + " in.";
+                
+                image.setAttribute('src', 'images/' + towns[i].photo);
+                image.setAttribute('alt', towns[i].name);
 
-                card.appendChild(h2);
-                card.appendChild(h4);
-                card.appendChild(para);
-                card.appendChild(para2);
-                card.appendChild(para3);
+                div.appendChild(h2);
+                div.appendChild(h4);
+                div.appendChild(para);
+                div.appendChild(para2);
+                div.appendChild(para3);
+                card.appendChild(div);
                 card.appendChild(image);
 
-                document.querySelector('div.preston-homebox').appendChild(card); 
-            }
+                card.classList.add('card');
 
-            else if (towns[i].name == "Fish Haven"){
-
+                document.querySelector('div.cards').appendChild(card); 
             }
         }    
-    })
+    )
 
     .catch(function(error){
-        alert("Sorry, the data is not available right now.");
+        alert("Sorry, the data for the town cards is not available right now.");
     })

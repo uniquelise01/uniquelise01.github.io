@@ -81,6 +81,41 @@ nav a:hover {
 }
 
 /*Home page*/
+main section {
+    border-radius: 7px;
+    margin: 0 auto;
+    width: 90%;
+    height: 1fr;
+}
+
+.card-text {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.479);
+    width: 200px;
+    padding: 0 15px 15px 15px;
+    font-size: 0.8em;
+    border-radius: 7px 0;
+}
+
+.card-text h2 {
+    margin-bottom: 0;
+}
+
+.home-motto {
+    margin-top: 2px;
+    font-style: italic;
+}
+
+.card-text p {
+    margin: 8px 0;
+}
+
+section img {
+    width: 100%;
+    border-radius: 7px;
+    margin: 0 auto 20px auto;
+}
+
 button {
     padding: 10px;
     margin: 10px;
@@ -92,6 +127,8 @@ button {
 
 .pres, .fish, .soda {
     display: none;
+    width: 90%;
+    max-width: 230px;
 }
 
 button:hover {
@@ -106,6 +143,7 @@ button:hover {
 }
 
 .weather-updates h4 {
+    font-family: 'Baloo 2', cursive;
     font-size: 1.1em;
     text-align: center;
     margin-bottom: 10px;
@@ -116,6 +154,12 @@ button:hover {
     max-width: 250px;
     padding: 15px;
     margin: 7px auto;
+    background-color: #9a5c38;
+}
+
+.weather-updates button:hover {
+    background-color: #e0995e;
+    color: black;
 }
 
 button.app.button {
@@ -187,6 +231,42 @@ footer p {
 
 
     /*Home page*/
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 20px auto;
+        overflow: hidden;
+        background-color: #B7B5B39d;
+        max-width: 500px;
+    }
+    
+    .card-text {
+        position: static;
+        background: none;
+        font-size: 0.9em;
+        margin: 0 10px 0 auto;
+        text-align: right;
+    }
+
+    main section:nth-child(2) img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        border-radius: 7px 0 0 7px;
+        margin: 0 auto 0 0;
+    }
+
+    main section:nth-child(2) .card-text {
+        text-align: left;
+        margin: 0 auto 0 0;
+    }
+    
+    section img {
+        height: 100%;
+        width: auto;
+        border-radius: 0 7px 7px 0;
+        margin: 0 0 0 auto;
+    }
+
     .weather-updates {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -254,23 +334,68 @@ footer p {
 
 
     /*Home page*/
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    main section {
+        overflow: hidden;
+        background-color: #B7B5B39d;
+        max-width: none;
+    }
+    
+    .card-text {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.479);
+        font-size: 1em;
+        width: 28%;
+        max-width: 220px;
+        margin: 0 10px 0 auto;
+        text-align: left;
+    }
+    
+    section img {
+        width: auto;
+        height: 250px;
+        border-radius: 7px;
+        margin: 0 0 0 auto;
+    }
+
+    main {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .home-buttons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
     .pres, .fish, .soda {
         display: block;
+        margin: -10px auto 50px auto;
     }
 
     .weather-updates {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: auto 225px 200px 200px auto;
         margin: 0 auto;
     }
 
     .weather-updates h4 {
-        grid-column: 1/2;
-        margin: auto;
+        grid-column: 2/3;
+        margin: auto 10px;
     }
 
     .weather-updates button {
-        margin: 30px;
+        margin: 30px auto;
+        width: 170px;
+    }
+
+    .mission {
+        margin-top: 40px;
+        max-width: 510px;
     }
 
     /*Footer*/
