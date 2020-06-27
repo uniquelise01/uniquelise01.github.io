@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weather Grotto | Storm Center</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/stormcenter.css">
+</head>
+<body>
+
+    <header>
+        <img class="logo-box" src="../lesson3/iconfinder_weather_1054936.svg" alt="logo">
+        <div class="header-title">
+            <h1 class="web-title">The Weather Grotto</h1>
+            <h3 class="motto">Relax, we've got you covered.</h3>
+        </div>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; MENU</a></li>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="preston-10.html">PRESTON</a></li>
+            <li><a href="#">SODA SPRINGS</a></li>
+            <li><a href="#">FISH HAVEN</a></li>
+            <li class="active"><a href="./stormcenter.html">STORM CENTER</a></li>
+            <li><a href="./gallery-10.html">GALLERY</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Report a Storm</h2>
+        <form method="get" action="thanks.html">
+            <legend>User Information</legend>
+            <fieldset>    
+                <label>Full Name* <input class="top" type="text" name="name" minlength="5" pattern="^[A-Za-z ]+$" required>
+                </label>
+                <label>Email <input class="top" type="email" name="email" placeholder="example@email.com"></label>
+                <label>Phone Number* <input class="top" type="tel" name="phone" required></label>
+            </fieldset>
+
+            <legend>Storm Information</legend>
+            <fieldset>
+                <label>Zip Code* <input class="top" type="number" name="zip" required></label>
+                <label>Storm Type <input class="top" list="storm-type" name="strmtype">
+                    <datalist id="storm-type">
+                        <option>Flash Flood</option>
+                        <option>Hail</option>
+                        <option>Hurricane</option>
+                        <option>Thunderstorm</option>
+                        <option>Tornado</option>
+                        <option>Unknown</option>
+                    </datalist>
+                </label>
+                <label class="sbs"><span class="range-title">Storm Severity </span><input class="range" type="range" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchanges="adjustRating(this.value)"><span id="ratingvalue">6</span>
+                </label>
+                <datalist id="tickmarks">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </datalist>
+                <label>Storm Region <select class="top region" name="region">
+                    <option value="" disabled selected>Select Region...</option>
+                    <option value="Preston">Preston</option>
+                    <option value="Soda-Springs">Soda Springs</option>
+                    <option value="Fish-Haven">Fish Haven</option>
+                </select></label>
+                <label>User in Danger? </label>
+                    <label class="radio-text"><input class="radio" type="radio" name="danger" value="yes"> Yes</label>
+                    <label class="radio-text"><input class="radio" type="radio" name="danger" value="maybe"> Maybe</label>
+                    <label class="radio-text"><input class="radio" type="radio" name="danger" value="no"> No</label>
+                <label id="add-info">Additional Information or Comments <input class="top comments" type="textarea" name="add-info"></label>
+            </fieldset>
+
+            <div id="btn">
+                <input type="submit" class="submitbtn" value="Report My Weather">
+            </div>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; The Weather Grotto | Attributions | Elise Hansen</p>
+        <p class="current-date"></p>
+    </footer>
+
+    <script src="./js/stormcenter.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+    WebFont.load({
+        google: {
+        families: ['Baloo 2', 'Roboto']
+        }
+    });
+    </script>
+    
+</body>
+</html>
