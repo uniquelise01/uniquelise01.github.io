@@ -10,6 +10,7 @@ let monthname = m_names[d.getMonth()];
 
 mydate.textContent = weekname + ", " + d.getDate() + " " + monthname + " " + d.getFullYear();
 
+
 //5 Day Forecast looping days
 let abbrw_names = ['Sun', 'Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thur'];
 let dayone = abbrw_names[d.getDay()+1];
@@ -48,6 +49,7 @@ fetch(apiURL)
         alert("Sorry, the data for the weather summary is not available right now.");
     })
 
+
 //5 Day Forecast Content
 const apiFive = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8cc80f462d0916f39d475a31d315920a"
 
@@ -71,24 +73,13 @@ fetch(apiURL)
     }    
     )
 
-//Wind chill calculation
-let t = parseFloat(document.getElementById("temp").innerText);
-let s = parseFloat(document.getElementById("windspeed").innerText);
-let wchill = 35.74 + (0.6215 * t) - (35.75 * (s**0.16)) + (0.4275 * t * (s**0.16));
-
-if (isNaN(wchill)) {
-    document.getElementById("windchill").innerHTML = "N/A";
-}
-
-else {
-    document.getElementById("windchill").innerHTML = parseInt(wchill);
-}
 
 //Hamburger menu
 const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('.ham');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+
 
 //Pancake block
 const pancalert = document.querySelector('.pancake-block');
