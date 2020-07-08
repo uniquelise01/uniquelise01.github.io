@@ -28,7 +28,7 @@ document.getElementById("day5").innerHTML = dayfive;
 
 
 //Weather Summary content
-const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8cc80f462d0916f39d475a31d315920a"
+const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=8cc80f462d0916f39d475a31d315920a"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -51,7 +51,7 @@ fetch(apiURL)
 
 
 //5 Day Forecast Content
-const apiFive = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&APPID=8cc80f462d0916f39d475a31d315920a"
+const apiFive = "https://api.openweathermap.org/data/2.5/forecast?id=5607916&APPID=8cc80f462d0916f39d475a31d315920a"
 
 fetch(apiURL)
     .then((response) => response.json())
@@ -85,7 +85,7 @@ fetch(towneventsURL)
         console.log(jsonObject);
         const towns = jsonObject['towns'];
         for(let i = 1; i < towns.length; i++){
-            if(towns[i].name == "Preston") {
+            if(towns[i].name == "Soda Springs") {
 
                 let card = document.createElement('section');
                 let para = document.createElement('p');
@@ -113,10 +113,3 @@ const mainnav = document.querySelector('.navigation');
 const hambutton = document.querySelector('.ham');
 
 hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-
-
-//Pancake block
-const pancalert = document.querySelector('.pancake-block');
-if (weekname === 'Friday'){
-    pancalert.style.display = "block";
-}

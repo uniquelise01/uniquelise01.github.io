@@ -133,6 +133,7 @@ button {
 
 button:hover {
     background-color: #282f47;
+    cursor: pointer;
 }
 
 .weather-updates {
@@ -160,6 +161,7 @@ button:hover {
 .weather-updates button:hover {
     background-color: #e0995e;
     color: black;
+    cursor: pointer;
 }
 
 button.app.button {
@@ -181,7 +183,7 @@ button.app.button {
 }
 
 .social img {
-    width: 30px;
+    width: 35px;
     margin: 5px;
 }
 
@@ -282,6 +284,10 @@ footer p {
         height: 70px;
         padding: auto;
         margin-bottom: 30px;
+    }
+
+    .social img {
+        width: 30px;
     }
 
 

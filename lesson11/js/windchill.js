@@ -7,7 +7,11 @@ console.log(p);
 console.log(r);
 console.log(chill);
 
-if (isNaN(chill)) {
+if (chill >= 35) {
+    document.getElementById("windchill").innerHTML = "N/A";
+}
+
+else if (isNaN(chill)) {
     document.getElementById("windchill").innerHTML = "N/A";
 }
 
