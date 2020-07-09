@@ -59,8 +59,8 @@ fetch(apiURL)
         console.log(jsonObject);
 
         for (let i = 1; i < 6; i++){
-            fore = document.textContent = jsonObject.list[i].main.temp;
-            convTemp = (fore * (9/5) - 459.67).toFixed(0);
+            let fore = jsonObject.list[i].main.temp;
+            convTemp = (fore * 9/5 - 459.67).toFixed(0);
             document.getElementById('tempd' + i).textContent = convTemp;
 
             imagesrc = jsonObject.list[i].weather[0].icon;
