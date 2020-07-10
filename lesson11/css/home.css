@@ -85,7 +85,6 @@ main section {
     border-radius: 7px;
     margin: 0 auto;
     width: 90%;
-    height: 1fr;
 }
 
 .card-text {
@@ -282,7 +281,6 @@ footer p {
 
     .weather-updates button {
         height: 70px;
-        padding: auto;
         margin-bottom: 30px;
     }
 
